@@ -15,6 +15,7 @@ blue = "^0.9.1"
 pydocstyle = "^6.3.0"
 pip-audit = "^2.6.1"
 taskipy = "^1.12.0"
+openpyxl = "^3.1.2"
 
 
 [build-system]
@@ -29,3 +30,5 @@ known_third_party = []
 [tool.taskipy.tasks]
 
 format = "isort . && blue ."
+test = "poetry run pytest -v"
+run = "python3 src/main.py"
