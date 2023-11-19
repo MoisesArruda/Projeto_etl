@@ -6,20 +6,20 @@ import pandas as pd
 def load_excel(
     data_frame: pd.DataFrame, output_path: str, file_name: str
 ) -> str:
-
+    
     """
-    Receber um DF e salvar como excel
+    Receber um DF e salvar como excel.
 
     args:
-    data_frame(pd.DataFrame): dataframe a ser salvo como excel
-    output_path (str): Caminho onde o arquivo será salvo
-    file_name (str): Nome do arquivo a ser salvo
+    data_frame(pd.DataFrame): dataframe a ser salvo como excel.
+    output_path (str): Caminho onde o arquivo será salvo.
+    file_name (str): Nome do arquivo a ser salvo.
 
-    return: "Arquivo salvo com sucesso
+    return: "Arquivo salvo com sucesso.
     """
 
     if not os.path.exists(output_path):
         os.makedirs(output_path)
-
+        
     data_frame.to_excel(f'{output_path}/{file_name}.xlsx', index=False)
-    return 'Arquivo salvo com sucesso'
+    return 'Arquivo salvo com sucesso.'

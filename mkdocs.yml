@@ -1,0 +1,20 @@
+site_name: Projeto de ETL
+theme:
+  name: material # or other theme seraching in google themes MKdocs
+  palette:
+    primary: blue
+  language: en
+
+repo_name: "MoisesArruda/Projeto_ETL"
+repo_url: "https://github.com/MoisesArruda/Projeto_ETL"
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python

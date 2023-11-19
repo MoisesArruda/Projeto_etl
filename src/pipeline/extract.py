@@ -1,18 +1,23 @@
-import glob  # Biblioteca para listar arquivos
-import os  # Biblioteca para manipular arquivos e pastas
+"""Esse é um módulo de extração de dados."""
+
+import glob 
+# Biblioteca para listar arquivos
+import os  
+# Biblioteca para manipular arquivos e pastas
 from typing import List
 
 import pandas as pd
 
 
 def extract_from_excel(path: str) -> List[pd.DataFrame]:
+
     """
     Função para ler os arquivos de uma
-    pasta data/input e retornar uma lista de dataframes
+    pasta data/input e retornar uma lista de dataframes.
 
-    args: input_path (str): Caminho da pasta com os arquivos
-
-    return: Lista de dataframes
+    args: input_path (str): Caminho da pasta com os arquivos.
+    
+    return: Lista de dataframes.
     """
 
     all_files = glob.glob(os.path.join(path, '*.xlsx'))

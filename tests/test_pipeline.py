@@ -8,7 +8,7 @@ df_2 = pd.DataFrame({'col1': [5, 6], 'col2': [7, 8]})
 
 def testar_a_concatenacao_da_lista_de_df():
     """
-    Use o arrange act e asset para testar a função concact_data_frames
+    Use o arrange act e asset para testar a função concact_data_frames.
     """
     # arrange
     data_frame_list = [df_1, df_2]
@@ -20,3 +20,4 @@ def testar_a_concatenacao_da_lista_de_df():
     # assert
     assert df.shape == (4, 2)
     assert data_frame.equals(df)
+    
