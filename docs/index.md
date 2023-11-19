@@ -1,17 +1,21 @@
-# Welcome to MkDocs
+# Welcome to my ETL Project
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## Commands
+## Workflow
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Desenvolvimento do trabalho
 
-## Project layout
+```mermaid
+gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+excludes weekdays 2014-01-10
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+section Life cycle
+Estrutura            :done,    des1, 2023-11-15,2023-11-16
+Extract               :active,  des2, 2023-11-18, 3d
+Transform             :         des3, 2023-11-22, 5d
+Load               :         des4, after des3, 5d
+
+```
